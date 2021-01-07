@@ -1,0 +1,9 @@
+fill ~+16~+16~+16 ~-16~-12~-16 magma 0 replace grass
+fill ~+16~+16~+16 ~-16~-12~-16 magma 0 replace stone
+fill ~+16~+16~+16 ~-16~-12~-16 magma 0 replace dirt
+fill ~+16~+16~+16 ~-16~-12~-16 magma 0 replace gravel
+fill ~+16~+16~+16 ~-16~-12~-16 magma 0 replace sand
+fill ~+16~+16~+16 ~-16~-12~-16 magma 0 replace sandstone
+fill ~+16~+16~+16 ~-16~-12~-16 magma 0 replace log
+fill ~+16~+16~+16 ~-16~-12~-16 magma 0 replace log2
+title @s actionbar THE FLOOR IS LAVA

@@ -1,0 +1,434 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.chaos_ctl": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "absorption": "math.die_roll_integer(1, 0, 29)==0"
+            },
+            {
+              "babyCreeper": "math.die_roll_integer(1, 0, 29)==1"
+            },
+            {
+              "bees": "math.die_roll_integer(1, 0, 29)==2"
+            },
+            {
+              "bouncy": "math.die_roll_integer(1, 0, 29)==3"
+            },
+            {
+              "cakewalk": "math.die_roll_integer(1, 0, 29)==4"
+            },
+            {
+              "chargedCreeperExplosion": "math.die_roll_integer(1, 0, 29)==5"
+            },
+            {
+              "COOKIES": "math.die_roll_integer(1, 0, 29)==6"
+            },
+            {
+              "danceParty": "math.die_roll_integer(1, 0, 29)==7"
+            },
+            {
+              "darkoakOverworld": "math.die_roll_integer(1, 0, 29)==8"
+            },
+            {
+              "floorIsLava": "math.die_roll_integer(1, 0, 29)==9"
+            },
+            {
+              "giveBuckeWhenBurningDarkOak": "math.die_roll_integer(1, 0, 29)==10"
+            },
+            {
+              "giveJumpBoost": "math.die_roll_integer(1, 0, 29)==11"
+            },
+            {
+              "Haunted": "math.die_roll_integer(1, 0, 29)==12"
+            },
+            {
+              "invisiblecreepers": "math.die_roll_integer(1, 0, 29)==13"
+            },
+            {
+              "kickSelf": "math.die_roll_integer(1, 0, 29)==14"
+            },
+            {
+              "needsmorecowbell": "math.die_roll_integer(1, 0, 29)==15"
+            },
+            {
+              "poison": "math.die_roll_integer(1, 0, 29)==16"
+            },
+            {
+              "RAID": "math.die_roll_integer(1, 0, 29)==17"
+            },
+            {
+              "RAIO": "math.die_roll_integer(1, 0, 29)==18"
+            },
+            {
+              "randomTP": "math.die_roll_integer(1, 0, 29)==19"
+            },
+            {
+              "setWorldSpawn": "math.die_roll_integer(1, 0, 29)==20"
+            },
+            {
+              "shulkers": "math.die_roll_integer(1, 0, 29)==21"
+            },
+            {
+              "speed20": "math.die_roll_integer(1, 0, 29)==22"
+            },
+            {
+              "speed2Creepers": "math.die_roll_integer(1, 0, 29)==23"
+            },
+            {
+              "speedmine": "math.die_roll_integer(1, 0, 29)==24"
+            },
+            {
+              "stoneage": "math.die_roll_integer(1, 0, 29)==25"
+            },
+            {
+              "takeweaponGiveFlower": "math.die_roll_integer(1, 0, 29)==26"
+            },
+            {
+              "tntRain": "math.die_roll_integer(1, 0, 29)==27"
+            },
+            {
+              "turtlemaster": "math.die_roll_integer(1, 0, 29)==28"
+            },
+            {
+              "waisted": "math.die_roll_integer(1, 0, 29)==29"
+            }
+          ]
+        },
+        "absorption": {
+          "on_entry": [
+            "/function absorption",
+            "/say function absorption"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "babyCreeper": {
+          "on_entry": [
+            "/function babyCreeper",
+            "/say function babyCreeper"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "bees": {
+          "on_entry": [
+            "/function bees",
+            "/say function bees"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "bouncy": {
+          "on_entry": [
+            "/function bouncy",
+            "/say function bouncy"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "cakewalk": {
+          "on_entry": [
+            "/function cakewalk",
+            "/say function cakewalk"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "chargedCreeperExplosion": {
+          "on_entry": [
+            "/function chargedCreeperExplosion",
+            "/say function chargedCreeperExplosion"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "COOKIES": {
+          "on_entry": [
+            "/function COOKIES",
+            "/say function COOKIES"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "danceParty": {
+          "on_entry": [
+            "/function danceParty",
+            "/say function danceParty"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "darkoakOverworld": {
+          "on_entry": [
+            "/function darkoakOverworld",
+            "/say function darkoakOverworld"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "floorIsLava": {
+          "on_entry": [
+            "/function floorIsLava",
+            "/say function floorIsLava"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "giveBuckeWhenBurningDarkOak": {
+          "on_entry": [
+            "/function giveBuckeWhenBurningDarkOak",
+            "/say function giveBuckeWhenBurningDarkOak"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "giveJumpBoost": {
+          "on_entry": [
+            "/function giveJumpBoost",
+            "/say function giveJumpBoost"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "Haunted": {
+          "on_entry": [
+            "/function Haunted",
+            "/say function Haunted"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "invisiblecreepers": {
+          "on_entry": [
+            "/function invisiblecreepers",
+            "/say function invisiblecreepers"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "kickSelf": {
+          "on_entry": [
+            "/function kickSelf",
+            "/say function kickSelf"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "needsmorecowbell": {
+          "on_entry": [
+            "/function needsmorecowbell",
+            "/say function needsmorecowbell"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "poison": {
+          "on_entry": [
+            "/function poison",
+            "/say function poison"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "RAID": {
+          "on_entry": [
+            "/function RAID",
+            "/say function RAID"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "RAIO": {
+          "on_entry": [
+            "/function RAIO",
+            "/say function RAIO"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "randomTP": {
+          "on_entry": [
+            "/function randomTP",
+            "/say function randomTP"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "setWorldSpawn": {
+          "on_entry": [
+            "/function setWorldSpawn",
+            "/say function setWorldSpawn"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "shulkers": {
+          "on_entry": [
+            "/function shulkers",
+            "/say function shulkers"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "speed20": {
+          "on_entry": [
+            "/function speed20",
+            "/say function speed20"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "speed2Creepers": {
+          "on_entry": [
+            "/function speed2Creepers",
+            "/say function speed2Creepers"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "speedmine": {
+          "on_entry": [
+            "/function speedmine",
+            "/say function speedmine"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "stoneage": {
+          "on_entry": [
+            "/function stoneage",
+            "/say function stoneage"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "takeweaponGiveFlower": {
+          "on_entry": [
+            "/function takeweaponGiveFlower",
+            "/say function takeweaponGiveFlower"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "tntRain": {
+          "on_entry": [
+            "/function tntRain",
+            "/say function tntRain"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "turtlemaster": {
+          "on_entry": [
+            "/function turtlemaster",
+            "/say function turtlemaster"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "waisted": {
+          "on_entry": [
+            "/function waisted",
+            "/say function waisted"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
