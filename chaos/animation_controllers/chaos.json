@@ -7,94 +7,97 @@
         "default": {
           "transitions": [
             {
-              "absorption": "math.die_roll_integer(1, 0, 29)==0"
+              "absorption": "math.die_roll_integer(1, 0, 30)==0"
             },
             {
-              "babyCreeper": "math.die_roll_integer(1, 0, 29)==1"
+              "baby_creeper": "math.die_roll_integer(1, 0, 30)==1"
             },
             {
-              "bees": "math.die_roll_integer(1, 0, 29)==2"
+              "become_cow": "math.die_roll_integer(1, 0, 30)==2"
             },
             {
-              "bouncy": "math.die_roll_integer(1, 0, 29)==3"
+              "bees": "math.die_roll_integer(1, 0, 30)==3"
             },
             {
-              "cakewalk": "math.die_roll_integer(1, 0, 29)==4"
+              "bouncy": "math.die_roll_integer(1, 0, 30)==4"
             },
             {
-              "chargedCreeperExplosion": "math.die_roll_integer(1, 0, 29)==5"
+              "cakewalk": "math.die_roll_integer(1, 0, 30)==5"
             },
             {
-              "COOKIES": "math.die_roll_integer(1, 0, 29)==6"
+              "charged_creeper_explosion": "math.die_roll_integer(1, 0, 30)==6"
             },
             {
-              "danceParty": "math.die_roll_integer(1, 0, 29)==7"
+              "cookies_x64": "math.die_roll_integer(1, 0, 30)==7"
             },
             {
-              "darkoakOverworld": "math.die_roll_integer(1, 0, 29)==8"
+              "dance_party": "math.die_roll_integer(1, 0, 30)==8"
             },
             {
-              "floorIsLava": "math.die_roll_integer(1, 0, 29)==9"
+              "darkoak_overworld": "math.die_roll_integer(1, 0, 30)==9"
             },
             {
-              "giveBuckeWhenBurningDarkOak": "math.die_roll_integer(1, 0, 29)==10"
+              "floor_Is_lava": "math.die_roll_integer(1, 0, 30)==10"
             },
             {
-              "giveJumpBoost": "math.die_roll_integer(1, 0, 29)==11"
+              "four_horseman": "math.die_roll_integer(1, 0, 30)==11"
             },
             {
-              "Haunted": "math.die_roll_integer(1, 0, 29)==12"
+              "give_bucke_when_burning_dark_oak": "math.die_roll_integer(1, 0, 30)==12"
             },
             {
-              "invisiblecreepers": "math.die_roll_integer(1, 0, 29)==13"
+              "give_jump_boost": "math.die_roll_integer(1, 0, 30)==13"
             },
             {
-              "kickSelf": "math.die_roll_integer(1, 0, 29)==14"
+              "haunted_ghast": "math.die_roll_integer(1, 0, 30)==14"
             },
             {
-              "needsmorecowbell": "math.die_roll_integer(1, 0, 29)==15"
+              "invisible_creepers": "math.die_roll_integer(1, 0, 30)==15"
             },
             {
-              "poison": "math.die_roll_integer(1, 0, 29)==16"
+              "needs_more_cowbell": "math.die_roll_integer(1, 0, 30)==16"
             },
             {
-              "RAID": "math.die_roll_integer(1, 0, 29)==17"
+              "poison": "math.die_roll_integer(1, 0, 30)==17"
             },
             {
-              "RAIO": "math.die_roll_integer(1, 0, 29)==18"
+              "raid_fake": "math.die_roll_integer(1, 0, 30)==18"
             },
             {
-              "randomTP": "math.die_roll_integer(1, 0, 29)==19"
+              "raid_now": "math.die_roll_integer(1, 0, 30)==19"
             },
             {
-              "setWorldSpawn": "math.die_roll_integer(1, 0, 29)==20"
+              "random_tp": "math.die_roll_integer(1, 0, 30)==20"
             },
             {
-              "shulkers": "math.die_roll_integer(1, 0, 29)==21"
+              "set_world_spawn": "math.die_roll_integer(1, 0, 30)==21"
             },
             {
-              "speed20": "math.die_roll_integer(1, 0, 29)==22"
+              "shulkers": "math.die_roll_integer(1, 0, 30)==22"
             },
             {
-              "speed2Creepers": "math.die_roll_integer(1, 0, 29)==23"
+              "speed20": "math.die_roll_integer(1, 0, 30)==23"
             },
             {
-              "speedmine": "math.die_roll_integer(1, 0, 29)==24"
+              "speedmine": "math.die_roll_integer(1, 0, 30)==24"
             },
             {
-              "stoneage": "math.die_roll_integer(1, 0, 29)==25"
+              "speed_2_creepers": "math.die_roll_integer(1, 0, 30)==25"
             },
             {
-              "takeweaponGiveFlower": "math.die_roll_integer(1, 0, 29)==26"
+              "stoneage": "math.die_roll_integer(1, 0, 30)==26"
             },
             {
-              "tntRain": "math.die_roll_integer(1, 0, 29)==27"
+              "take_weapon_give_flower": "math.die_roll_integer(1, 0, 30)==27"
             },
             {
-              "turtlemaster": "math.die_roll_integer(1, 0, 29)==28"
+              "tnt_rain": "math.die_roll_integer(1, 0, 30)==28"
             },
             {
-              "waisted": "math.die_roll_integer(1, 0, 29)==29"
+              "turtlemaster": "math.die_roll_integer(1, 0, 30)==29"
+            },
+            {
+              "waisted": "math.die_roll_integer(1, 0, 30)==30"
             }
           ]
         },
@@ -109,10 +112,21 @@
             }
           ]
         },
-        "babyCreeper": {
+        "baby_creeper": {
           "on_entry": [
-            "/function babyCreeper",
-            "/say function babyCreeper"
+            "/function baby_creeper",
+            "/say function baby_creeper"
+          ],
+          "transitions": [
+            {
+              "default": "math.mod(query.time_stamp,1800)==1"
+            }
+          ]
+        },
+        "become_cow": {
+          "on_entry": [
+            "/function become_cow",
+            "/say function become_cow"
           ],
           "transitions": [
             {
@@ -153,10 +167,10 @@
             }
           ]
         },
-        "chargedCreeperExplosion": {
+        "charged_creeper_explosion": {
           "on_entry": [
-            "/function chargedCreeperExplosion",
-            "/say function chargedCreeperExplosion"
+            "/function charged_creeper_explosion",
+            "/say function charged_creeper_explosion"
           ],
           "transitions": [
             {
@@ -164,10 +178,10 @@
             }
           ]
         },
-        "COOKIES": {
+        "cookies_x64": {
           "on_entry": [
-            "/function COOKIES",
-            "/say function COOKIES"
+            "/function cookies_x64",
+            "/say function cookies_x64"
           ],
           "transitions": [
             {
@@ -175,10 +189,10 @@
             }
           ]
         },
-        "danceParty": {
+        "dance_party": {
           "on_entry": [
-            "/function danceParty",
-            "/say function danceParty"
+            "/function dance_party",
+            "/say function dance_party"
           ],
           "transitions": [
             {
@@ -186,10 +200,10 @@
             }
           ]
         },
-        "darkoakOverworld": {
+        "darkoak_overworld": {
           "on_entry": [
-            "/function darkoakOverworld",
-            "/say function darkoakOverworld"
+            "/function darkoak_overworld",
+            "/say function darkoak_overworld"
           ],
           "transitions": [
             {
@@ -197,10 +211,10 @@
             }
           ]
         },
-        "floorIsLava": {
+        "floor_Is_lava": {
           "on_entry": [
-            "/function floorIsLava",
-            "/say function floorIsLava"
+            "/function floor_Is_lava",
+            "/say function floor_Is_lava"
           ],
           "transitions": [
             {
@@ -208,10 +222,10 @@
             }
           ]
         },
-        "giveBuckeWhenBurningDarkOak": {
+        "four_horseman": {
           "on_entry": [
-            "/function giveBuckeWhenBurningDarkOak",
-            "/say function giveBuckeWhenBurningDarkOak"
+            "/function four_horseman",
+            "/say function four_horseman"
           ],
           "transitions": [
             {
@@ -219,10 +233,10 @@
             }
           ]
         },
-        "giveJumpBoost": {
+        "give_bucke_when_burning_dark_oak": {
           "on_entry": [
-            "/function giveJumpBoost",
-            "/say function giveJumpBoost"
+            "/function give_bucke_when_burning_dark_oak",
+            "/say function give_bucke_when_burning_dark_oak"
           ],
           "transitions": [
             {
@@ -230,10 +244,10 @@
             }
           ]
         },
-        "Haunted": {
+        "give_jump_boost": {
           "on_entry": [
-            "/function Haunted",
-            "/say function Haunted"
+            "/function give_jump_boost",
+            "/say function give_jump_boost"
           ],
           "transitions": [
             {
@@ -241,10 +255,10 @@
             }
           ]
         },
-        "invisiblecreepers": {
+        "haunted_ghast": {
           "on_entry": [
-            "/function invisiblecreepers",
-            "/say function invisiblecreepers"
+            "/function haunted_ghast",
+            "/say function haunted_ghast"
           ],
           "transitions": [
             {
@@ -252,10 +266,10 @@
             }
           ]
         },
-        "kickSelf": {
+        "invisible_creepers": {
           "on_entry": [
-            "/function kickSelf",
-            "/say function kickSelf"
+            "/function invisible_creepers",
+            "/say function invisible_creepers"
           ],
           "transitions": [
             {
@@ -263,10 +277,10 @@
             }
           ]
         },
-        "needsmorecowbell": {
+        "needs_more_cowbell": {
           "on_entry": [
-            "/function needsmorecowbell",
-            "/say function needsmorecowbell"
+            "/function needs_more_cowbell",
+            "/say function needs_more_cowbell"
           ],
           "transitions": [
             {
@@ -285,10 +299,10 @@
             }
           ]
         },
-        "RAID": {
+        "raid_fake": {
           "on_entry": [
-            "/function RAID",
-            "/say function RAID"
+            "/function raid_fake",
+            "/say function raid_fake"
           ],
           "transitions": [
             {
@@ -296,10 +310,10 @@
             }
           ]
         },
-        "RAIO": {
+        "raid_now": {
           "on_entry": [
-            "/function RAIO",
-            "/say function RAIO"
+            "/function raid_now",
+            "/say function raid_now"
           ],
           "transitions": [
             {
@@ -307,10 +321,10 @@
             }
           ]
         },
-        "randomTP": {
+        "random_tp": {
           "on_entry": [
-            "/function randomTP",
-            "/say function randomTP"
+            "/function random_tp",
+            "/say function random_tp"
           ],
           "transitions": [
             {
@@ -318,10 +332,10 @@
             }
           ]
         },
-        "setWorldSpawn": {
+        "set_world_spawn": {
           "on_entry": [
-            "/function setWorldSpawn",
-            "/say function setWorldSpawn"
+            "/function set_world_spawn",
+            "/say function set_world_spawn"
           ],
           "transitions": [
             {
@@ -351,10 +365,10 @@
             }
           ]
         },
-        "speed2Creepers": {
+        "speedmine": {
           "on_entry": [
-            "/function speed2Creepers",
-            "/say function speed2Creepers"
+            "/function speedmine",
+            "/say function speedmine"
           ],
           "transitions": [
             {
@@ -362,10 +376,10 @@
             }
           ]
         },
-        "speedmine": {
+        "speed_2_creepers": {
           "on_entry": [
-            "/function speedmine",
-            "/say function speedmine"
+            "/function speed_2_creepers",
+            "/say function speed_2_creepers"
           ],
           "transitions": [
             {
@@ -384,10 +398,10 @@
             }
           ]
         },
-        "takeweaponGiveFlower": {
+        "take_weapon_give_flower": {
           "on_entry": [
-            "/function takeweaponGiveFlower",
-            "/say function takeweaponGiveFlower"
+            "/function take_weapon_give_flower",
+            "/say function take_weapon_give_flower"
           ],
           "transitions": [
             {
@@ -395,10 +409,10 @@
             }
           ]
         },
-        "tntRain": {
+        "tnt_rain": {
           "on_entry": [
-            "/function tntRain",
-            "/say function tntRain"
+            "/function tnt_rain",
+            "/say function tnt_rain"
           ],
           "transitions": [
             {
