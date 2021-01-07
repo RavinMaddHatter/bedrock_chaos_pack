@@ -1,0 +1,16 @@
+/execute @e[type=snowball] ~ ~ ~ summon fireball ~ ~1 ~
+All blocks in a 10x10x10 square get deleted
+Randomly trade positions with a random entity within 24x24x6 blocks
+Teleport the player several thousand blocks into the sky for approximately twelve seconds, then apply slowfalling and teleport them back down
+Give the player one of the dimaond tools but with one use left on it
+Summon multiple baby chickens nearby with fatal poison applied, and have the player watch them die before they can do anything
+Summon a shorn snow golem
+Summon and detonate an end crystal at the player's feet
+Give the player two tipped arrows of invisibility (replace off hand)
+Use /playanimation to somehow make mobs (or the player) animate in very unnatural positions
+Use /camerashake (position mode)
+Aside from the crystal one, I'm trying to think of stuff that won't grief the terrain. Nothing sucks more than random chance destroying your builds.
+base jump.
+Fill all nearby wheat, potato, carrot, beet, and nether wart crops to be stage 0 or their max stage, resetting or boosting their growth
+replace all torches with redston torches for R55
+summon ring of fire around player/lava
