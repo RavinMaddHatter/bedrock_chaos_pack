@@ -1,4 +1,4 @@
-//bridge-file-version: #4
+//bridge-file-version: #13
 {
 	"format_version": "1.16.0",
 	"minecraft:entity": {
@@ -8,11 +8,13 @@
 			"is_summonable": false,
 			"is_experimental": false,
 			"animations": {
-				"ctrl": "controller.animation.chaos_ctl"
+				"cakewalk": "controller.animation.cakewalk",
+				"ctr": "controller.animation.chaos_ctl"
 			},
 			"scripts": {
 				"animate": [
-					"ctrl"
+					"cakewalk",
+					"ctr"
 				]
 			}
 		},
@@ -51,6 +53,17 @@
 				},
 				"minecraft:spell_effects": {
 					"remove_effects": "bad_omen"
+				}
+			},
+			"chaos:cakewalk": {
+				"minecraft:is_saddled": {},
+				"minecraft:ageable": {
+					"duration": 30,
+					"feed_items": "wheat",
+					"grow_up": {
+						"event": "chaos:stop_cakewalk",
+						"target": "self"
+					}
 				}
 			}
 		},
@@ -207,6 +220,20 @@
 				"remove": {
 					"component_groups": [
 						"minecraft:raid_trigger"
+					]
+				}
+			},
+			"chaos:start_cakewalk": {
+				"add": {
+					"component_groups": [
+						"chaos:cakewalk"
+					]
+				}
+			},
+			"chaos:stop_cakewalk": {
+				"remove": {
+					"component_groups": [
+						"chaos:cakewalk"
 					]
 				}
 			}
